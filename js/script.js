@@ -8,8 +8,8 @@ function rainingdae(message) {
     audio.play();
 
     var images = [
-        'coole250.png',
-        'love250.png'
+        'Test.png',
+        'Test2.png'
       ]
       var stop = s.start(images, {
         ddyMin: 200,
