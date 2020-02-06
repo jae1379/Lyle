@@ -8,8 +8,8 @@ function rainingdae(message) {
     audio.play();
 
     var images = [
-        'dae250.png',
-        'trin250.png'
+        'coole250.png',
+        'love250.png'
       ]
       var stop = s.start(images, {
         ddyMin: 200,
@@ -31,7 +31,7 @@ ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
     }
 };
 ComfyJS.onChat = ( user, message, flags, self, extra ) => {
-    if( flags.customReward && extra.customRewardId === "46e3bf7a-567a-4d1a-8d3d-bf088b14703d" ) {
+    if( flags.customReward && extra.customRewardId === "6dcaea62-9e15-4859-9750-206df2c28f7b" ) {
         rainingdae( message );
     }
 };
