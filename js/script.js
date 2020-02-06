@@ -4,7 +4,7 @@ var c = document.getElementById('canvas')
 var s = sprinkler.create(c)
 var audio = new Audio('danysenal.mp3');
 
-function rainingdae(message) {
+function raininglyle(message) {
     audio.play();
 
     var images = [
@@ -27,12 +27,12 @@ function rainingdae(message) {
 
 ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
     if( flags.customReward && extra.customRewardId === rewardId ) {
-        rainingdae( message );
+        raininglyle( message );
     }
 };
 ComfyJS.onChat = ( user, message, flags, self, extra ) => {
     if( flags.customReward && extra.customRewardId === "6dcaea62-9e15-4859-9750-206df2c28f7b" ) {
-        rainingdae( message );
+        raininglyle( message );
     }
 };
 ComfyJS.Init( "jae1379" );
